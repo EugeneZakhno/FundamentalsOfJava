@@ -9,7 +9,9 @@ public class MyClass {
             System.out.println(ch);
         }
 
-        obj.forEach(System.out::println);
+        for (Character character : obj) {
+            System.out.println(character);
+        }
         while (obj.hasNext()) {
             System.out.println(obj.next());
         }

@@ -31,11 +31,7 @@ public class MyClass {
         System.out.println(arr.toString());
         // [{3;1}, {2;4}, {1;3}]
         // Сортировка по y по убыванию
-        arr.sort( (a, b) -> {
-                    if (a.getY() > b.getY()) return -1;
-                    if (a.getY() < b.getY()) return 1;
-                    return 0;
-                }
+        arr.sort( (a, b) -> Integer.compare(b.getY(), a.getY())
         );
         System.out.println(arr.toString());
         // [{2;4}, {1;3}, {3;1}]
