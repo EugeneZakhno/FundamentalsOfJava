@@ -6,7 +6,7 @@ import java.util.Deque;
 
 public class MyClass {
     public static void main(String[] args) {
-        // Очередь (первым пришел, первым ушел)
+        // Очередь (первым пришел, первым ушел) FIFO
         Queue<Integer> arr = new LinkedList<Integer>();
         arr.offer(1);    // Добавляем элементы в очередь
         arr.offer(2);
